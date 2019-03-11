@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', "DreamsController@index");
+
+Route::resource("dreams", "DreamsController");
+
